@@ -25,6 +25,15 @@ A responsive **Personal Finance Tracker** web application built with React that 
 ![Dashboard](screenshots/dashboard.png)
 ![Add Transaction](screenshots/add-transaction.png)
 
+
+
+## 🌐 Live Demo
+
+🎯 Check out the live deployed app here:  
+👉 https://vercel.com/esthers-projects-92c4b44f/my-tracker/6kU4P7sMXjDMi135qcSgBUgG1HjV
+
+You can interact with the app directly on Vercel — no setup needed!
+
 ## 📦 Installation & Setup
 
 Follow these steps to run the project locally:
