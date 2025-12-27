@@ -2,7 +2,7 @@
 
 A responsive **Personal Finance Tracker** web application built with React that helps users track income, expenses, and balance in a simple and intuitive way.
 
----
+
 
 ## 🚀 Features
 - Add income and expense transactions
@@ -12,7 +12,7 @@ A responsive **Personal Finance Tracker** web application built with React that 
 - Clear transaction history
 - Responsive design for mobile and desktop
 
----
+
 
 ## 🛠️ Built With
 - HTML
@@ -20,8 +20,10 @@ A responsive **Personal Finance Tracker** web application built with React that 
 - JavaScript (ES6)
 - React (Vite)
 - Tailwind CSS (optional)
-
----
+  
+## Screenshots
+![Dashboard](screenshots/dashboard.png)
+![Add Transaction](screenshots/add-transaction.png)
 
 ## 📦 Installation & Setup
 
