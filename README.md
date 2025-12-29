@@ -29,8 +29,8 @@ A responsive **Personal Finance Tracker** web application built with React that 
 
 ## 🌐 Live Demo
 
-🎯 Check out the live deployed app here:  
-👉 https://vercel.com/esthers-projects-92c4b44f/my-tracker/6kU4P7sMXjDMi135qcSgBUgG1HjV
+Live Demo: https://my-tracker-five.vercel.app
+
 
 You can interact with the app directly on Vercel — no setup needed!
 
@@ -40,4 +40,4 @@ Follow these steps to run the project locally:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/personal-finance-tracker.git
+git clone https://github.com/Estherlateefat/my-tracker.git
