@@ -31,6 +31,7 @@ export default function TransactionForm({ onAdd }) {
       description: "",
     });
   };
+const isDisabled = !form.amount || !form.category || !form.date;
 
   return (
     <form
@@ -84,9 +85,17 @@ export default function TransactionForm({ onAdd }) {
         />
       </div>
 
-      <button className="mt-4 w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
-        Add Transaction
-      </button>
+      <button
+  type="submit"
+  disabled={isDisabled}
+  className="mt-4 w-full bg-blue-600 text-white p-2 rounded 
+             hover:bg-blue-700 disabled:opacity-50 
+             disabled:cursor-not-allowed disabled:hover:bg-blue-600"
+>
+  Add Transaction
+</button>
+
+      
     </form>
   );
 }

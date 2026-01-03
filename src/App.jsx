@@ -224,20 +224,6 @@ export default function App() {
     <div className="min-h-screen bg-linear-to-br from-blue-100 to-purple-100 py-10 px-4">
       <div className="max-w-4xl mx-auto space-y-8">
 
-        {/* Student Info Card */}
-        <div className="bg-white rounded-2xl shadow-md p-6">
-          <h2 className="text-xl font-bold mb-4 text-gray-800">
-            🎓 Student Details
-          </h2>
-
-          <div className="grid sm:grid-cols-2 gap-3 text-gray-700">
-            <p><span className="font-semibold">Name:</span> Suara Lateefat Esther</p>
-            <p><span className="font-semibold">Department:</span> Frontend Development</p>
-            <p><span className="font-semibold">Matric No:</span> JAD/TA/25A/FD/001</p>
-            <p><span className="font-semibold">Project:</span> Final Project</p>
-          </div>
-        </div>
-
         {/* Title */}
         <h1 className="text-4xl font-extrabold text-center text-gray-800">
           💰 Personal Finance Tracker
