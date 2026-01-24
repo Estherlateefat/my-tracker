@@ -31,19 +31,21 @@ export default function TransactionForm({ onAdd }) {
       description: "",
     });
   };
-const isDisabled = !form.amount || !form.category || !form.date;
+
+  const isDisabled = !form.amount || !form.category || !form.date;
 
   return (
     <form
       onSubmit={submit}
-      className="bg-white p-6 rounded shadow mb-6"
+      className="bg-white rounded shadow mb-6 p-4 md:p-6"
     >
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
         <select
           name="type"
           value={form.type}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border p-2 rounded w-full"
         >
           <option value="income">Income</option>
           <option value="expense">Expense</option>
@@ -55,7 +57,8 @@ const isDisabled = !form.amount || !form.category || !form.date;
           placeholder="Amount"
           value={form.amount}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border p-2 rounded w-full"
+          step="any"
         />
 
         <input
@@ -64,7 +67,7 @@ const isDisabled = !form.amount || !form.category || !form.date;
           placeholder="Category"
           value={form.category}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border p-2 rounded w-full"
         />
 
         <input
@@ -72,7 +75,7 @@ const isDisabled = !form.amount || !form.category || !form.date;
           name="date"
           value={form.date}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border p-2 rounded w-full"
         />
 
         <input
@@ -81,21 +84,19 @@ const isDisabled = !form.amount || !form.category || !form.date;
           placeholder="Description (optional)"
           value={form.description}
           onChange={handleChange}
-          className="border p-2 rounded md:col-span-2"
+          className="border p-2 rounded w-full md:col-span-2"
         />
       </div>
 
       <button
-  type="submit"
-  disabled={isDisabled}
-  className="mt-4 w-full bg-blue-600 text-white p-2 rounded 
-             hover:bg-blue-700 disabled:opacity-50 
-             disabled:cursor-not-allowed disabled:hover:bg-blue-600"
->
-  Add Transaction
-</button>
-
-      
+        type="submit"
+        disabled={isDisabled}
+        className="mt-4 w-full bg-blue-600 text-white p-2 rounded
+                   hover:bg-blue-700 disabled:opacity-50
+                   disabled:cursor-not-allowed disabled:hover:bg-blue-600"
+      >
+        Add Transaction
+      </button>
     </form>
   );
 }

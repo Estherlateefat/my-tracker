@@ -9,9 +9,7 @@ export default function BalanceSummary({ income, expenses }) {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
       <div className="bg-white p-4 rounded shadow">
         <p className="text-gray-500">Balance</p>
-        <p className="text-2xl font-bold">
-          {formatAmount(balance)}
-        </p>
+        <p className="text-2xl font-bold">{formatAmount(balance)}</p>
       </div>
 
       <div className="bg-white p-4 rounded shadow">
